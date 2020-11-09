@@ -14,7 +14,7 @@ body {
       rgba(255, 0, 0, 0.52),
       rgba(0, 195, 255, 0.73)
     ),
-    url("img/app.jpg");
+    url("img/mael-balland-Z6EBThBgL70-unsplash.jpg");
   background-repeat: no-repeat;
   transition: 0.2s ease;
 }
@@ -25,7 +25,7 @@ body {
       rgba(255, 16, 16, 0.52),
       rgba(0, 0, 0, 0.73)
     ),
-    url("img/hot.jpg");
+    url("img/vicko-mozara-m82uh_vamhg-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   transition: 0.2s ease;
@@ -42,7 +42,7 @@ main {
       rgba(0, 255, 213, 0.52),
       rgba(0, 0, 0, 0.73)
     ),
-    url("img/cold.jpg");
+    url("img/noaa-ixdWJjGUA2Q-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   transition: 0.2s ease;
@@ -102,6 +102,9 @@ main {
   border-radius: 16px;
   box-shadow: 3px 3px rgba(58, 53, 53, 0.73);
   text-shadow: 3px 3px rgba(58, 53, 53, 0.73);
+}
+.weather-container p {
+  font-size: 30px;
 }
 
 .weather-container .weather {
