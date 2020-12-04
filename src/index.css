@@ -113,3 +113,9 @@ main {
   font-weight: 700;
   text-shadow: 3px 3px rgba(58, 53, 53, 0.73);
 }
+.compass {
+  background-image: url("img/compass.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding:20px;
+}
