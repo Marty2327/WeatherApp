@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import keys from "./keys";
 import arrow from "./img/arrow.png";
 const api = {
-  key: keys.API_KEY,
-  base: keys.BASE_URL,
+  key: process.env.REACT_APP_WEATHER_KEY,
+  base: process.env.REACT_APP_BASE_URL,
 };
 
 function App() {
@@ -17,6 +16,7 @@ function App() {
   const [weather, setWeather] = useState({});
   const search = (e) => {
     if (e.key === "Enter") {
+      console.log(`${api.base}weather?q=${query  + ", US"}&units=imperial&APPID=${process.env.REACT_APP_WEATHER_KEY}`);
       fetch(`${api.base}weather?q=${query  + ", US"}&units=imperial&APPID=${api.key}`)
         .then((res) => res.json())
         .then((result) => {
